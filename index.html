@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Manipulation Demo</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.css">
+</head>
+<body>
+    <h1>Data Manipulation Demo</h1>
+    <table id="data-table" class="display">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Occupation</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here by JavaScript -->
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.getJSON('data.json', function(data) {
+                $.each(data, function(index, value) {
+                    $('#data-table tbody').append('<tr><td>' + value.Name + '</td><td>' + value.Age + '</td><td>' + value.Occupation + '</td><td>' + value.Salary + '</td></tr>');
+                });
+                $('#data-table').DataTable();
+            });
+        });
+    </script>
+</body>
+</html>
