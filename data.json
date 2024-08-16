@@ -1,5 +1,7 @@
-{"Name":"Alice","Age":24,"Occupation":"Engineer","Salary":70000}
-{"Name":"Bob","Age":27,"Occupation":"Doctor","Salary":80000}
-{"Name":"Charlie","Age":22,"Occupation":"Artist","Salary":45000}
-{"Name":"David","Age":32,"Occupation":"Lawyer","Salary":90000}
+[
+{"Name":"Alice","Age":24,"Occupation":"Engineer","Salary":70000},
+{"Name":"Bob","Age":27,"Occupation":"Doctor","Salary":80000},
+{"Name":"Charlie","Age":22,"Occupation":"Artist","Salary":45000},
+{"Name":"David","Age":32,"Occupation":"Lawyer","Salary":90000},
 {"Name":"Eva","Age":29,"Occupation":"Teacher","Salary":50000}
+]
