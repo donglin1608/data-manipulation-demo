@@ -31,5 +31,8 @@ jobs:
         git config --global user.name 'github-actions'
         git config --global user.email 'github-actions@github.com'
         git add data.json
-        git commit -m 'Update data.json'
+        git commit --allow-empty -m 'Update data.json'
         git push
+
+
+    
